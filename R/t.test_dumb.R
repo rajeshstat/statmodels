@@ -1,10 +1,10 @@
-#' @title FUNCTION_TITLE
-#' @description FUNCTION_DESCRIPTION
-#' @param data PARAM_DESCRIPTION
-#' @param response PARAM_DESCRIPTION
-#' @param group PARAM_DESCRIPTION
-#' @return OUTPUT_DESCRIPTION
-#' @details DETAILS
+#' @title t test for dummies
+#' @description t test with diagnostics
+#' @param data the data to be included
+#' @param response the values column
+#' @param group the grouping column
+#' @return the same object as the t.test with diagnostics included
+#' @details To be done
 #' @examples
 #' \dontrun{
 #' if(interactive()){
@@ -57,8 +57,6 @@ t_test_dumb <-  function(.data,
     # Variance Assumption
     if (var.equal) {
       if (var.test(value ~ group, data = my_data)$p.value < 0.05) {
-
-        warning("")
 
         boxplot_violin <- ggplot(my_data, aes(x=group, y=value)) +
           geom_violin(aes(fill=group, color=group)) +

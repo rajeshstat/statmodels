@@ -2,26 +2,26 @@
 % Please edit documentation in R/t.test_dumb.R
 \name{t_test_dumb}
 \alias{t_test_dumb}
-\title{FUNCTION_TITLE}
+\title{t test for dummies}
 \usage{
 t_test_dumb(.data, value, group, check_assumptions = TRUE,
   var.equal = FALSE, ...)
 }
 \arguments{
-\item{group}{PARAM_DESCRIPTION}
+\item{group}{the grouping column}
 
-\item{data}{PARAM_DESCRIPTION}
+\item{data}{the data to be included}
 
-\item{response}{PARAM_DESCRIPTION}
+\item{response}{the values column}
 }
 \value{
-OUTPUT_DESCRIPTION
+the same object as the t.test with diagnostics included
 }
 \description{
-FUNCTION_DESCRIPTION
+t test with diagnostics
 }
 \details{
-DETAILS
+To be done
 }
 \examples{
 \dontrun{
