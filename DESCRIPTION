@@ -1,0 +1,14 @@
+Package: statmodels
+Title: Comprehensive statistical models checking all assumptions
+Version: 0.1
+Authors@R: person("Rajesh", "Talluri", email = "rtalluri@umc.edu", role = c("aut", "cre"))
+Description: Has traditional Statitistical models which  are comprehesnsively evaluated with automated diagnostics checks and assumption checking.
+Depends: R (>= 3.4.4), tidyverse, qqplotr
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
